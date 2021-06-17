@@ -3,12 +3,13 @@
 // Declare and initialize the 12 variables here:
 //
 const input = require('readline-sync');
-let astronautCount = input.question("How many astronauts?");
+let astronautCount = input.question("How many astronauts? ");
 
 let kg = " kg";
 let date = "Monday 2019-3-18";
 let time = "10:05:04 AM"+ "\n";
 let astronautStatus = "ready"+ "\n";
+astronautCount = Number(astronautCount);
 let averageAstronautMassKg = 80.7;
 let crewMassKg = astronautCount * averageAstronautMassKg;
 let fuelMassKg = 76000;
@@ -20,11 +21,11 @@ let weatherStatus = "clear"+ "\n";
 let dashedLine = "-------------------------------------";
 let clearForTakeOff = 
 
-astronautCount = parseInt(input.question);
+
 //
 // Write code to generate the LC04 report here:
 
-console.log(typeof astronautCount);
+
 
 console.log(dashedLine);
 console.log("> LC04 - LAUNCH CHECKLIST");  
